@@ -1,0 +1,9 @@
+docker/mysql/
+app/.env
+app/config/secrets/prod/prod.decrypt.private.php
+app/public/bundles/
+app/var/
+app/vendor/
+app/public/images/
+.idea
+.env
