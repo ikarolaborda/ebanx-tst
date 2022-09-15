@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Service\AccountService;
+use Composer;
 
 class EventController extends AbstractController
 {
@@ -39,6 +40,7 @@ class EventController extends AbstractController
                 }
                 return new JsonResponse(0,404);
         }
+        return 0;
     }
 
 }

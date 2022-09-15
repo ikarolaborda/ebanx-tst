@@ -10,7 +10,7 @@ use Doctrine\DBAL\Types\Types;
 class Account implements \JsonSerializable
 {
     #[ORM\Id]
-    #[ORM\Column]
+    #[ORM\Column(type: Types::STRING)]
     private ?int $id;
 
     #[ORM\Column(type: Types::FLOAT, options:["default" => 0])]

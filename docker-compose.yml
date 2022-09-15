@@ -25,7 +25,7 @@ services:
     container_name: nginx
     image: nginx:latest
     ports:
-      - '8080:80'
+      - '80:80'
     volumes:
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
       - ./app:/var/www/ebanx-tst
