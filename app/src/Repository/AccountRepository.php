@@ -30,6 +30,11 @@ class AccountRepository extends ServiceEntityRepository
         }
     }
 
+    public function update(Account $entity) {
+        $this->getEntityManager()->merge($entity);
+        $this->getEntityManager()->flush();
+    }
+
     public function remove(Account $entity, bool $flush = false): void
     {
         $this->getEntityManager()->remove($entity);
